@@ -94,19 +94,6 @@ def create_aligned_gif(original_image, columns_per_row, window_size, duration):
         frame_width = original_width // columns_per_row[i]
 
         for j in range(columns_per_row[i]):
-            offset_y,offset_x = fft_offsets[frame_idx]
-            center_x = j * frame_width + (frame_width) // 2 - offset_x
-            center_y = frame_height * i +
-
-
-
-Certainly, continuing from the specified line:
-
-```python
-    for i in range(rows):
-        frame_width = original_width // columns_per_row[i]
-
-        for j in range(columns_per_row[i]):
             offset_y, offset_x = fft_offsets[frame_idx]
             center_x = j * frame_width + (frame_width) // 2 - offset_x
             center_y = frame_height * i + frame_height // 2 - offset_y
